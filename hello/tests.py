@@ -16,4 +16,4 @@ class HelloWorldTest(TestCase):
 
     client = Client()
     response = client.get("/hello_world/")
-    self.assertIn("Hello world !", response.content)
+    self.assertIn("Hello world !", str(response.content))
